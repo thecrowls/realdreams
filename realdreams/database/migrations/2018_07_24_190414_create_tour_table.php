@@ -15,6 +15,9 @@ class CreateTourTable extends Migration
     {
         Schema::create('tour', function (Blueprint $table) {
             $table->increments('id');
+            $table->double('price');
+            $table->integer('number_of_days');
+            $table->integer('order');
             $table->timestamps();
         });
     }
@@ -28,4 +31,6 @@ class CreateTourTable extends Migration
     {
         Schema::dropIfExists('tour');
     }
+
+
 }

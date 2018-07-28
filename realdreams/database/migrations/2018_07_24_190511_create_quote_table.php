@@ -15,6 +15,10 @@ class CreateQuoteTable extends Migration
     {
         Schema::create('quote', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('author');
+            $table->string('text');
+            $table->integer('article_id')->unsigned();
+            $table->foreign('article_id')->references('id')->on('article');
             $table->timestamps();
         });
     }

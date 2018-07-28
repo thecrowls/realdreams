@@ -3,18 +3,26 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use \Dimsav\Translatable\Translatable;
 
 class Country extends Model
 {
-    protected $table = 'country';
+    use \Dimsav\Translatable\Translatable;
+
     public $translatedAttributes = ['name'];
-    protected $fillable = ['name'];
+    protected $fillable = ['order'];
+
+    public function countryTranslation()
+    {
+        return $this->belongsTO('app\Models\countryTranslation', 'country_id', 'id');
+    }
 }
 
 class CountryTranslation extends Model {
 
     public $timestamps = false;
-    protected $fillable = ['name'];
+    protected $fillable = ['name','country_id'];
+    public function country(){
+        return $this->hasOne('app\Models\Country','country_id', 'id');
+    }
 
 }

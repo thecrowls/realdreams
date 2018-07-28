@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
+
 class CreateCountryTable extends Migration
 {
     /**
@@ -16,7 +17,7 @@ class CreateCountryTable extends Migration
         Schema::create('country', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
-            $table->string('name');
+            $table->integer('order');
         });
     }
 

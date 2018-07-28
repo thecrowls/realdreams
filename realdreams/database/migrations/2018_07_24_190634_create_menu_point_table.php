@@ -15,6 +15,7 @@ class CreateMenuPointTable extends Migration
     {
         Schema::create('menu_point', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('order');
             $table->timestamps();
         });
     }
