@@ -13,7 +13,7 @@ class CreateVisasTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('VisaTranslation', function (Blueprint $table) {
+        Schema::create('visa_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ class CreateVisasTranslationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('VisaTranslation');
+        Schema::dropIfExists('visa_translations');
     }
 }

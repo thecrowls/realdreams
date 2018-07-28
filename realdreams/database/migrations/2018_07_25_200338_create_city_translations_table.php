@@ -19,7 +19,7 @@ class CreateCityTranslationsTable extends Migration
             $table->integer('city_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['city_id','locale']);
-            $table->foreign('city_id')->references('id')->on('city')->onDelete('cascade');
+            $table->foreign('city_id')->references('id')->on('cities')->onDelete('cascade');
             $table->timestamps();
         });
     }

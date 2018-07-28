@@ -13,15 +13,15 @@ class CreateTourCityTable extends Migration
      */
     public function up()
     {
-        Schema::create('tour_city', function (Blueprint $table) {
+        Schema::create('tour_cities', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->integer('tour_id')->unsigned();
             $table->foreign('tour_id')->references('id')
-                ->on('tour');
+                ->on('tours');
             $table->integer('city_id')->unsigned();
             $table->foreign('city_id')->references('id')
-                ->on('city');
+                ->on('cities');
         });
     }
 
@@ -32,6 +32,6 @@ class CreateTourCityTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tour_city');
+        Schema::dropIfExists('tour_cities');
     }
 }

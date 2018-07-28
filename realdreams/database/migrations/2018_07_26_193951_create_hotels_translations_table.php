@@ -13,7 +13,7 @@ class CreateHotelsTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('HotelTranslation', function (Blueprint $table) {
+        Schema::create('hotel_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('description');
@@ -21,7 +21,7 @@ class CreateHotelsTranslationsTable extends Migration
             $table->integer('hotel_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['hotel_id','locale']);
-            $table->foreign('hotel_id')->references('id')->on('hotel')->onDelete('cascade');
+            $table->foreign('hotel_id')->references('id')->on('hotels')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateHotelsTranslationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('HotelTranslation');
+        Schema::dropIfExists('hotel_translations');
     }
 }

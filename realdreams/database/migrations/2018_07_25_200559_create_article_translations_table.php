@@ -21,7 +21,7 @@ class CreateArticleTranslationsTable extends Migration
             $table->integer('article_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['article_id','locale']);
-            $table->foreign('article_id')->references('id')->on('article')->onDelete('cascade');
+            $table->foreign('article_id')->references('id')->on('articles')->onDelete('cascade');
             $table->timestamps();
         });
     }

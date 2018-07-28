@@ -13,14 +13,14 @@ class CreateRestaurantsTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('RestaurantTranslation', function (Blueprint $table) {
+        Schema::create('restaurant_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('description');
             $table->integer('restaurant_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['restaurant_id','locale']);
-            $table->foreign('restaurant_id')->references('id')->on('restaurant')->onDelete('cascade');
+            $table->foreign('restaurant_id')->references('id')->on('restaurants')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -32,6 +32,6 @@ class CreateRestaurantsTranslationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('RestaurantTranslation');
+        Schema::dropIfExists('restaurant_translations');
     }
 }

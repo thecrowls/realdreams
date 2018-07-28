@@ -19,7 +19,7 @@ class CreateTourTranslationsTable extends Migration
             $table->integer('tour_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['tour_id','locale']);
-            $table->foreign('tour_id')->references('id')->on('tour')->onDelete('cascade');
+            $table->foreign('tour_id')->references('id')->on('tours')->onDelete('cascade');
             $table->timestamps();
         });
     }

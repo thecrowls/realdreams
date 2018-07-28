@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Quote extends Model
 {
-    protected $table = 'quote';
+    protected $table = 'quotes';
 
 }

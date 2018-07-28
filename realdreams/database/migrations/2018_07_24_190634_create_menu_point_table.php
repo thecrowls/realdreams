@@ -13,7 +13,7 @@ class CreateMenuPointTable extends Migration
      */
     public function up()
     {
-        Schema::create('menu_point', function (Blueprint $table) {
+        Schema::create('menu_points', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateMenuPointTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('menu_point');
+        Schema::dropIfExists('menu_points');
     }
 }

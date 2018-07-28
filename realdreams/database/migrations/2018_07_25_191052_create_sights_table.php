@@ -13,10 +13,10 @@ class CreateSightsTable extends Migration
      */
     public function up()
     {
-        Schema::create('sight', function (Blueprint $table) {
+        Schema::create('sights', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('city_id')->unsigned();
-            $table->foreign('city_id')->references('id')->on('city');
+            $table->foreign('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateSightsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sight');
+        Schema::dropIfExists('sights');
     }
 }

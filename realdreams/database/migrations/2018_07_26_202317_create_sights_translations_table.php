@@ -13,7 +13,7 @@ class CreateSightsTranslationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('SightTranslation', function (Blueprint $table) {
+        Schema::create('sight_translations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->string('description');
@@ -21,7 +21,7 @@ class CreateSightsTranslationsTable extends Migration
             $table->integer('sight_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['sight_id','locale']);
-            $table->foreign('sight_id')->references('id')->on('sight')->onDelete('cascade');
+            $table->foreign('sight_id')->references('id')->on('sights')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateSightsTranslationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('SightTranslation');
+        Schema::dropIfExists('sight_translations');
     }
 }

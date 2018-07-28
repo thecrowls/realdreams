@@ -19,7 +19,7 @@ class CreateCountryTranslationsTable extends Migration
             $table->integer('country_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['country_id','locale']);
-            $table->foreign('country_id')->references('id')->on('country')->onDelete('cascade');
+            $table->foreign('country_id')->references('id')->on('countries')->onDelete('cascade');
             $table->timestamps();
         });
     }

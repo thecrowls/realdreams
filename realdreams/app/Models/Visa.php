@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visa extends Model
 {
-    protected $table = 'visa';
+    protected $table = 'visas';
 
     public function visaTranslation()
     {

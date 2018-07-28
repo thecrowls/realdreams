@@ -13,11 +13,11 @@ class CreateRestaurantsTable extends Migration
      */
     public function up()
     {
-        Schema::create('restaurant', function (Blueprint $table) {
+        Schema::create('restaurants', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('rank');
             $table->integer('city_id')->unsigned();
-            $table->foreign('city_id')->references('id')->on('city');
+            $table->foreign('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateRestaurantsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('restaurant');
+        Schema::dropIfExists('restaurants');
     }
 }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MenuPoint extends Model
 {
-    protected $table = 'menu_point';
+    protected $table = 'menu_points';
 
     public function menuPointTranslation()
     {

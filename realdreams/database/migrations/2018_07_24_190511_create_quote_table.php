@@ -13,12 +13,12 @@ class CreateQuoteTable extends Migration
      */
     public function up()
     {
-        Schema::create('quote', function (Blueprint $table) {
+        Schema::create('quotes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('author');
             $table->string('text');
             $table->integer('article_id')->unsigned();
-            $table->foreign('article_id')->references('id')->on('article');
+            $table->foreign('article_id')->references('id')->on('articles');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateQuoteTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('quote');
+        Schema::dropIfExists('quotes');
     }
 }

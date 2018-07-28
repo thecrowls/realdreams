@@ -19,7 +19,7 @@ class CreateMenuPointTranslationsTable extends Migration
             $table->integer('menu_point_id')->unsigned();
             $table->string('locale')->index();
             $table->unique(['menu_point_id','locale']);
-            $table->foreign('menu_point_id')->references('id')->on('menu_point')->onDelete('cascade');
+            $table->foreign('menu_point_id')->references('id')->on('menu_points')->onDelete('cascade');
             $table->timestamps();
         });
     }

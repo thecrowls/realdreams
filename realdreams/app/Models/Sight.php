@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Sight extends Model
 {
-    protected $table = 'sight';
+    protected $table = 'sights';
 
     public function sightTranslation()
     {

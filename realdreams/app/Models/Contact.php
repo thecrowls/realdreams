@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Contact extends Model
 {
-    protected $table = 'contact';
+    protected $table = 'contacts';
     public $translatedAttributes = ['address'];
     protected $fillable = ['email','contact_phone','fax'];
     public function contactTranslation()

@@ -13,7 +13,7 @@ class CreateTourTable extends Migration
      */
     public function up()
     {
-        Schema::create('tour', function (Blueprint $table) {
+        Schema::create('tours', function (Blueprint $table) {
             $table->increments('id');
             $table->double('price');
             $table->integer('number_of_days');
@@ -29,7 +29,7 @@ class CreateTourTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tour');
+        Schema::dropIfExists('tours');
     }
 
 

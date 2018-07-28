@@ -8,6 +8,7 @@ class Country extends Model
 {
     use \Dimsav\Translatable\Translatable;
 
+    protected $table = 'countries';
     public $translatedAttributes = ['name'];
     protected $fillable = ['order'];
 

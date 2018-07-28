@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tour extends Model
 {
-    protected $table = 'tour';
+    protected $table = 'tours';
 
     public function city()
     {
