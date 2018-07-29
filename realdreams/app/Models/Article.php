@@ -9,7 +9,7 @@ class Article extends Model
     use \Dimsav\Translatable\Translatable;
     protected $table = 'articles';
 
-    public $translatedAttributes = ['text','title','description'];
+    public $translatedAttributes = ['text','title','description','locale'];
     protected $fillable = ['image','order'];
 
     public function articleTranslation()
