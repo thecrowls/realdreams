@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('{lang?}')->middleware('locale')->group(function() {
+    Route::get('/', "MainController@index")->name('index');
 });
-
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

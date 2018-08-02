@@ -4,11 +4,6 @@ Author: Smart
 Varsion: 1.1
 */
 
-includeScript ('../booking/js/jquery-ui-1.10.3.custom.min.js');
-includeScript ('../booking/js/jquery.fancyform.js');
-includeScript ('../booking/js/jquery.placeholder.js');
-includeScript ('../booking/js/regula.js');
-
 (function($){
 	$.fn.bookingForm=function(options){
 		return this.each(function(){
@@ -353,9 +348,4 @@ includeScript ('../booking/js/regula.js');
 // extrude class name
 function className(className){
 	return String(className).substr(1);
-}
-
-function includeScript(url){
-	document.write('<script type="text/javascript" src="js/'+ url + '"></script>'); 
-	return false;
 }
