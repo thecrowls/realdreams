@@ -14,7 +14,7 @@ class Sight extends Model
     }
 }
 
-class CountryTranslation extends Model {
+class SightTranslation extends Model {
 
     public $timestamps = false;
     protected $fillable = ['name', 'description', 'address', 'sight_id'];
