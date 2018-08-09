@@ -19,7 +19,7 @@ $factory->define(Article::class, function (Faker\Generator $faker) {
 
 $factory->define(ArticleTranslation::class, function (Faker\Generator $faker) {
     return [
-        'title' => $faker->name,
+        'title' => $faker->title,
         'description' => $faker->text,
         'text' => $faker->text,
         'article_id' => Article::all()->random()->id,

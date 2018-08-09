@@ -11,6 +11,7 @@ class SightsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\Sight::class, 20)->create();
+        factory(App\Models\SightTranslation::class, 80)->create();
     }
 }

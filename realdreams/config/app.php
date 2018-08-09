@@ -64,7 +64,7 @@ return [
     | ahead and set this to a sensible default for you out of the box.
     |
     */
-
+    'Date' => Jenssegers\Date\Date::class,
     'timezone' => 'UTC',
 
     /*

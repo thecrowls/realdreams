@@ -899,3 +899,7 @@ header h1 a {
 }
 
 }
+
+#add-country-field {
+    position: absolute;
+}

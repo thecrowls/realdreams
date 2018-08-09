@@ -17,6 +17,7 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '4e8671d7be9056dcd04ddd9e8e15f9cc' => __DIR__ . '/..' . '/encore/laravel-admin/src/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -80,6 +81,10 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         array (
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
+        ),
+        'J' => 
+        array (
+            'Jenssegers\\Date\\' => 16,
         ),
         'I' => 
         array (
@@ -241,6 +246,10 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         array (
             0 => __DIR__ . '/..' . '/laravel/tinker/src',
         ),
+        'Jenssegers\\Date\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jenssegers/date/src',
+        ),
         'Illuminate\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel/framework/src/Illuminate',
@@ -374,6 +383,7 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         'App\\Models\\Restaurant' => __DIR__ . '/../..' . '/app/Models/Restaurant.php',
         'App\\Models\\RestaurantTranslation' => __DIR__ . '/../..' . '/app/Models/Restaurant.php',
         'App\\Models\\Sight' => __DIR__ . '/../..' . '/app/Models/Sight.php',
+        'App\\Models\\SightTranslation' => __DIR__ . '/../..' . '/app/Models/Sight.php',
         'App\\Models\\Tour' => __DIR__ . '/../..' . '/app/Models/Tour.php',
         'App\\Models\\TourTranslation' => __DIR__ . '/../..' . '/app/Models/Tour.php',
         'App\\Models\\Visa' => __DIR__ . '/../..' . '/app/Models/Visa.php',
@@ -1976,6 +1986,8 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         'JakubOnderka\\PhpConsoleColor\\ConsoleColor' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/ConsoleColor.php',
         'JakubOnderka\\PhpConsoleColor\\InvalidStyleException' => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src/JakubOnderka/PhpConsoleColor/InvalidStyleException.php',
         'JakubOnderka\\PhpConsoleHighlighter\\Highlighter' => __DIR__ . '/..' . '/jakub-onderka/php-console-highlighter/src/JakubOnderka/PhpConsoleHighlighter/Highlighter.php',
+        'Jenssegers\\Date\\Date' => __DIR__ . '/..' . '/jenssegers/date/src/Date.php',
+        'Jenssegers\\Date\\DateServiceProvider' => __DIR__ . '/..' . '/jenssegers/date/src/DateServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
@@ -3824,8 +3836,18 @@ class ComposerStaticInit61ce679e9256cfda2f2d4c2b2706fb68
         'Tests\\CreatesApplication' => __DIR__ . '/../..' . '/tests/CreatesApplication.php',
         'Tests\\Feature\\ExampleTest' => __DIR__ . '/../..' . '/tests/Feature/ExampleTest.php',
         'Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
+        'Tests\\Unit\\ArticleTest' => __DIR__ . '/../..' . '/tests/Unit/ArticleTest.php',
+        'Tests\\Unit\\CityTest' => __DIR__ . '/../..' . '/tests/Unit/CityTest.php',
+        'Tests\\Unit\\CompanyTest' => __DIR__ . '/../..' . '/tests/Unit/CompanyTest.php',
+        'Tests\\Unit\\ContactTest' => __DIR__ . '/../..' . '/tests/Unit/ContactTest.php',
         'Tests\\Unit\\CountryTest' => __DIR__ . '/../..' . '/tests/Unit/CountryTest.php',
         'Tests\\Unit\\ExampleTest' => __DIR__ . '/../..' . '/tests/Unit/ExampleTest.php',
+        'Tests\\Unit\\HotelTest' => __DIR__ . '/../..' . '/tests/Unit/HotelTest.php',
+        'Tests\\Unit\\MenuPointTest' => __DIR__ . '/../..' . '/tests/Unit/MenuPointTest.php',
+        'Tests\\Unit\\QuoteTest' => __DIR__ . '/../..' . '/tests/Unit/QuoteTest.php',
+        'Tests\\Unit\\RestaurantTest' => __DIR__ . '/../..' . '/tests/Unit/RestaurantTest.php',
+        'Tests\\Unit\\SightTest' => __DIR__ . '/../..' . '/tests/Unit/SightTest.php',
+        'Tests\\Unit\\TourTest' => __DIR__ . '/../..' . '/tests/Unit/TourTest.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
         'TheSeer\\Tokenizer\\Exception' => __DIR__ . '/..' . '/theseer/tokenizer/src/Exception.php',
         'TheSeer\\Tokenizer\\NamespaceUri' => __DIR__ . '/..' . '/theseer/tokenizer/src/NamespaceUri.php',

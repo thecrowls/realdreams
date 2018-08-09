@@ -14,7 +14,7 @@ $factory->define(App\Models\Sight::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Models\SightTranslation::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'name' => $faker->title,
         'description' => $faker->text,
         'address' => $faker->address,
         'sight_id' => \App\Models\Sight::all()->random()->id,

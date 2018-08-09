@@ -11,6 +11,7 @@ class ToursTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\Tour::class, 20)->create();
+        factory(App\Models\TourTranslation::class, 80)->create();
     }
 }

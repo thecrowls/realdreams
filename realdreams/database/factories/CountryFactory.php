@@ -16,7 +16,7 @@ $factory->define(App\Models\Country::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Models\CountryTranslation::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'name' => $faker->country,
         'country_id' => Country::all()->random()->id,
         'locale' => $faker->locale
     ];

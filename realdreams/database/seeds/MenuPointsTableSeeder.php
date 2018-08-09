@@ -11,6 +11,7 @@ class MenuPointsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\MenuPoint::class, 5)->create();
+        factory(App\Models\MenuPointTranslation::class, 20)->create();
     }
 }

@@ -11,6 +11,7 @@ class HotelsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Models\Hotel::class, 10)->create();
+        factory(App\Models\HotelTranslation::class, 40)->create();
     }
 }
