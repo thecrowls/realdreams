@@ -18,6 +18,8 @@ Route::group([
 
     $router->resources([
         'countries' => CountryController::class,
-        'articles' => ArticleController::class
+        'articles' => ArticleController::class,
+        'tours' => TourController::class,
+        'cities' => CityController::class
     ]);
 });

@@ -33,7 +33,7 @@ body {
 	border:0;
 	float:right;
 	background:#fff;
-	color:#f00;
+	color: #5dfffd;
 	width:50%;
 	line-height:10px;
 	font-size:10px;
@@ -100,6 +100,7 @@ h3 {
 h3.head1 {
     padding-top: 111px;
     margin-bottom: 33px;
+    color: #9f191f;
 }
 
 h4 {
@@ -179,11 +180,11 @@ a {
 }
 
 a:hover {
-	color: #c73430;
+	color: #25b5c7;
 }
 
 a.col1:hover a {
-    color: #c73430;
+    color: #3196c7;
 }
 
 a.btn {
@@ -198,7 +199,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background-color: #c73430;
+    background-color: #3673c7;
     color: #fff;
 }
 
@@ -360,7 +361,7 @@ header h1 a img {
 .banner a {
     font-size: 14px;
     line-height: 20px;
-    color: #c73430;
+    color: #164667;
     text-transform: uppercase;
     display: inline-block;
     background-color: #e5e5e5;
@@ -370,7 +371,7 @@ header h1 a img {
 }
 
 .banner a:hover {
-    background-color: #c73430;
+    background-color: #50c3ca;
     color: #fff;
 }
 
@@ -406,7 +407,7 @@ header h1 a img {
 .block1 time {
     float: left;
     display: block;
-    background: url(../images/time_bg.png) 0 0 repeat-x #d64842;
+    background: url(../images/time_bg.png) 0 0 repeat-x #07d6b4;
     border-radius: 13px;
     color: #fff;
     width: 60px;
@@ -429,7 +430,7 @@ header h1 a img {
 }
 
 .block1 time  span {
-    border-bottom: 1px solid #b42d29;
+    border-bottom: 1px solid #5592b4;
     margin: 0 3px;
     font-size: 14px;
     display: block;
@@ -440,7 +441,7 @@ header h1 a img {
 .block1 time:after {
     height: 23px;
     content: '';
-    border-top: 1px solid #e08885;
+    border-top: 1px solid #a44be0;
     position: absolute;
     left: 3px;
     right: 3px;
@@ -475,7 +476,7 @@ header h1 a img {
 a.link1 {
     font-size: 14px;
     line-height: 20px;
-    color: #c73430;
+    color: #164667;
     text-transform: uppercase;
     display: inline-block;
     background-color: #e5e5e5;
@@ -485,7 +486,7 @@ a.link1 {
 }
 
 a.link1:hover {
-    background-color: #c73430;
+    background-color: #50c3ca;
     color: #fff;
 }
 
@@ -533,7 +534,7 @@ a.link1:hover {
 /**Map**/
 
 .col1 {
-    color: #f3aa29;
+    color: #164667;
 }
 
 .map {
@@ -629,7 +630,7 @@ footer {
 .socials a:hover {
     background-position: 0 -100px;
     background-color: #F0F3F5;
-    color: #d84a45;
+    color: #8dc2d8;
 }
 
 .socials a +a {

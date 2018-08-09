@@ -23,7 +23,7 @@ class Country extends Model
 
 class CountryTranslation extends Model {
 
-    public $timestamps = false;
+//    public $timestamps = false;
     protected $fillable = ['name','country_id','locale'];
     public function country(){
         return $this->hasOne('app\Models\Country','country_id', 'id');
