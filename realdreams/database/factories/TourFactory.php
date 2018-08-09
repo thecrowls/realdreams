@@ -16,7 +16,7 @@ $factory->define(App\Models\Tour::class, function (Faker\Generator $faker) {
 
 $factory->define(App\Models\TourTranslation::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'name' => $faker->title,
         'tour_id' => \App\Models\Tour::all()->random()->id,
         'locale' => $faker->locale
     ];
