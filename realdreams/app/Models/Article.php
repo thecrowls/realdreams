@@ -21,7 +21,7 @@ class Article extends Model
 class ArticleTranslation extends Model {
 
     protected $table = 'article_translations';
-    public $timestamps = false;
+//    public $timestamps = false;
     protected $fillable = ['text','title','description','article_id'];
 
     public function article(){

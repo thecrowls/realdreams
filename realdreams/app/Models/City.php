@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class City extends Model
 {
+    use \Dimsav\Translatable\Translatable;
+
     protected $table = 'cities';
     public $translatedAttributes = ['name'];
     protected $fillable = ['order'];
@@ -25,7 +27,7 @@ class City extends Model
 class CityTranslation extends Model {
 
     protected $table = 'city_translations';
-    public $timestamps = false;
+//    public $timestamps = false;
     protected $fillable = ['name','city_id'];
 
     public function city(){

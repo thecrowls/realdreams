@@ -134,7 +134,7 @@ textarea::-moz-placeholder
   line-height: 1em;
   color: gray;
   z-index: 4;
-  color: #fe5353;
+  color: #54fefe;
 }
 .success-message {
   position: relative;
