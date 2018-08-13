@@ -20,7 +20,6 @@ class MainController extends Controller
     public function index()
     {
         $locale = Lang::getLocale();
-        Date::setLocale($locale);
         $company_info = DB::table('company_translations')->where('company_id',
             '1')->where('locale', $locale)->first();
         $articles = DB::table('articles')

@@ -14,5 +14,5 @@ use Jenssegers\Date\Date;
 
 function localeDate($date, $format)
 {
-    return Date::createFromFormat($format, $date);
+    return Date::createFromFormat('Y-m-d H:i:s',  $date)->format($format);
 }

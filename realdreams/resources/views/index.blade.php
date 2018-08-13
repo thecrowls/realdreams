@@ -189,7 +189,8 @@
             @foreach($articles as $article)
                 <div class="grid_4">
                     <div class="block1">
-                        <time datetime="{{$article->created_at}}">{{localeDate($article->created_at, 'd M Y')}}</time>
+                        <time datetime="{{$article->created_at}}">{{localeDate($article->created_at, 'd')}}
+                            <span>{{localeDate($article->created_at, 'M')}}</span></time>
                         <div class="extra_wrapper">
                             <div class="text1 col1"><a href="#">{{$article->title}}</a></div>
                             {{$article->description}}

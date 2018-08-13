@@ -18,5 +18,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('{lang?}')->middleware('locale')->group(function() {
     Route::get('/', "MainController@index")->name('index');
+    Route::get('', "MenuController@main_menu")->name('header');
 });
 Auth::routes();
